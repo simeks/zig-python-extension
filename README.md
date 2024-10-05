@@ -1,5 +1,7 @@
 # Zig/C extension using Zig build
 
+> Note: This is just a testing stuff, see related work if you want something that actually works.
+
 Playground for using Zig to build both Zig and C extensions.
 
 Related stuff:
