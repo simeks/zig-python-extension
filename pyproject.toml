@@ -1,0 +1,23 @@
+[build-system]
+requires = [
+    "poetry-core",
+    "ziglang==0.13.0",
+    "setuptools>=75.1.0",
+    "numpy==2.1.1"
+]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "pyzig"
+version = "0.1.0"
+description = ""
+authors = ["Simon Ekström"]
+include = [
+    { path = "src/*", format = "sdist" }
+]
+
+[tool.poetry.build]
+script = "build.py"
+generate-setup-file = true
+
+
