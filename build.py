@@ -80,10 +80,6 @@ class ZigBuildExt(build_ext):
         # if platform.system() == "Windows":
         #     args.extend(["-target", "x86_64-windows-msvc"])
 
-        # Is numpy available?
-        if "numpy" in globals():
-            args.append(f"-I{numpy.get_include()}")
-
         subprocess.run(args + ext.sources)
 
         # Clean-up of files we don't want to distribute
